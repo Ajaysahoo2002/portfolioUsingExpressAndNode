@@ -18,7 +18,7 @@ const partialsPath = path.join(__dirname, "../templates/partials");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // parse url encoded data
 
-app.use("/api/user", router);
+app.use("/", router);
 app.use(express.static(publicPath)); // set the static files
 app.set("view engine", "hbs");          //set view engine i.e hbs
 app.set("views", viewsPath);            //set the views directory
