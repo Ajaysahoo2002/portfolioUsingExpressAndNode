@@ -1,0 +1,546 @@
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    color: red;
+    background-color: black;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.9);
+    /* background-image: url("/assets/programming.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    color: white;
+}
+
+html {
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+
+.active {
+    background: linear-gradient(to top, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s ease-in-out all;
+}
+
+hr {
+    margin: 1rem 5rem;
+    border-color: gray;
+}
+
+a:hover,
+i:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background: linear-gradient(to top, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+i {
+    transition: 0.2s ease-in-out all;
+}
+
+i:hover {
+    transform: scale(1.5);
+}
+
+header {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+.navbar #nav-left span {
+    background: linear-gradient(to top, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.navbar #nav-right {
+    display: flex;
+}
+
+.navbar #nav-right a {
+    margin: 0 1.7rem;
+}
+
+.navbar a {
+    font-size: 1em;
+    padding: 0.3rem 0.5rem;
+}
+
+.header_container {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 5rem 0 5rem;
+}
+
+.header_container #subContainer_left {
+    width: 60%;
+}
+
+.header_container #subContainer_left h1,
+.header_container #subContainer_left h3,
+.header_container #subContainer_left p {
+    margin-top: 0.5em;
+    letter-spacing: 0.11em;
+}
+
+.header_container #subContainer_left h1,
+.header_container #subContainer_left h3 {
+    letter-spacing: 0.3em;
+}
+
+.header_container #subContainer_left h1 {
+    font-family: "Italianno", cursive;
+    background: linear-gradient(to top, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2.7em;
+}
+
+.header_container #subContainer_right {
+    width: 40%;
+    text-align: center;
+}
+
+.header_container img {
+    height: 270px;
+    width: 270px;
+    border-radius: 50%;
+    background: linear-gradient(rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+    padding: 1rem;
+    box-shadow: 0 0 30px 30px rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184);
+}
+
+.header_container button {
+    margin-top: 1.5rem;
+    font-size: 1.1em;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: transparent;
+    background: linear-gradient(to right bottom, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+    transition: 0.2s ease-in-out all;
+}
+
+.header_container button:hover {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid rgb(255, 0, 217);
+    background: linear-gradient(to top, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.header_container .socialIcons {
+    display: flex;
+    width: 70%;
+    margin-top: 2rem;
+}
+
+.header_container .socialIcons a {
+    margin: 2rem;
+    transition: 0.2s ease-in-out all;
+}
+
+.header_container .socialIcons :first-child {
+    margin-left: 0;
+}
+
+.mainContentSection {
+    padding: 2rem 3rem;
+}
+
+.mainContentSection .aboutSection {
+    text-align: center;
+    padding: 0 4rem;
+}
+
+.mainContentSection .aboutSection h6 {
+    text-align: right;
+    display: inline;
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: -0.9rem;
+    font-size: 1.2em;
+    background: linear-gradient(to top, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.mainContentSection .aboutSection h2 {
+    font-size: 2.2em;
+    letter-spacing: 0.12em;
+}
+
+.mainContentSection .aboutSection button {
+    margin-top: 1.5rem;
+    font-size: 1.1em;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background: transparent;
+    border: 1px solid rgb(255, 0, 217);
+    background: linear-gradient(to top, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.mainContentSection .aboutSection button i {
+    margin-left: 1rem;
+}
+
+.mainContentSection .aboutSection button:hover {
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: linear-gradient(to right bottom, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+    transition: 0.2s ease-in-out all;
+    color: white;
+}
+
+.mainContentSection .projectSection {
+    padding: 1rem 7rem;
+    margin-top: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.mainContentSection .projectSection h6 {
+    text-align: right;
+    display: inline;
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: -0.9rem;
+    font-size: 1.2em;
+    background: linear-gradient(to top, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.mainContentSection .projectSection h2 {
+    font-size: 2.2em;
+    letter-spacing: 0.12em;
+}
+
+.mainContentSection .projectSection img {
+    height: 200px;
+    width: 100%;
+}
+
+.mainContentSection .projectSection .projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.mainContentSection .projectSection .projectContainer .projectsCard {
+    border: transparent;
+    padding: 0.9rem;
+    border-radius: 0.5rem;
+    margin: 1rem 2rem;
+    text-align: left;
+    width: 36%;
+    box-shadow: -3px 3px 10px 2px rgba(255, 0, 128, 0.3);
+}
+
+.mainContentSection .projectSection .projectContainer .projectsCard h5,
+.mainContentSection .projectSection .projectContainer .projectsCard p,
+.mainContentSection .projectSection .projectContainer .projectsCard button {
+    margin-top: 0.8rem;
+}
+
+.mainContentSection .projectSection .projectContainer .projectsCard .btns {
+    text-align: center;
+}
+
+.mainContentSection .projectSection .projectContainer .projectsCard .btns button {
+    margin-left: 1.3rem;
+}
+
+.mainContentSection .projectSection .projectContainer .projectsCard .btns #btn1 {
+    margin-left: 0;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: transparent;
+    background: linear-gradient(to right bottom, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+    transition: 0.2s ease-in-out all;
+}
+
+.mainContentSection .projectSection .projectContainer .projectsCard .btns #btn1:hover {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid rgb(255, 0, 217);
+    background: linear-gradient(to top, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.mainContentSection .projectSection .projectContainer .projectsCard .btns #btn2 {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background: transparent;
+    border: 1px solid rgb(255, 0, 217);
+    background: linear-gradient(to top, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.mainContentSection .projectSection .projectContainer .projectsCard .btns #btn2:hover {
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: linear-gradient(to right bottom, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+    transition: 0.2s ease-in-out all;
+    color: white;
+}
+
+.mainContentSection .contactSection {
+    padding: 1rem 5rem;
+    text-align: center;
+    margin: 2rem -3rem;
+}
+
+.mainContentSection .contactSection h6 {
+    text-align: right;
+    display: inline;
+    position: absolute;
+    margin-left: 4rem;
+    margin-top: -0.9rem;
+    font-size: 1.2em;
+    background: linear-gradient(to top, rgb(255, 0, 60), rgb(231, 1, 135), rgb(158, 2, 230), rgb(15, 0, 184));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.mainContentSection .contactSection h2 {
+    font-size: 2.2em;
+    letter-spacing: 0.05em;
+}
+
+.mainContentSection .contactSection .contactDetails {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 3rem;
+}
+
+.mainContentSection .contactSection .contactDetails #leftSction {
+    width: 60%;
+    text-align: left;
+    padding: 1rem 2rem;
+    font-size: 1.1em;
+}
+
+.mainContentSection .contactSection .contactDetails #leftSction h3,
+.mainContentSection .contactSection .contactDetails #leftSction p {
+    margin-bottom: 0.5rem;
+}
+
+.mainContentSection .contactSection .contactDetails #leftSction .contacts {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    margin: 0.8rem 0;
+    padding: 0.5rem 0;
+    box-shadow: -3px 3px 10px 2px rgb(46, 43, 43);
+    border-radius: 0.5rem;
+}
+
+.mainContentSection .contactSection .contactDetails #leftSction .contacts p {
+    margin-left: 1rem;
+}
+
+.mainContentSection .contactSection .contactDetails #leftSction .contacts i {
+    padding: 0.5rem;
+}
+
+.mainContentSection .contactSection .contactDetails #rightSction {
+    width: 40%;
+    margin-left: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.1em;
+    box-shadow: -3px -3px 10px 2px rgb(46, 43, 43);
+}
+
+.mainContentSection .contactSection .contactDetails #rightSction form {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContentSection .contactSection .contactDetails #rightSction form input,
+.mainContentSection .contactSection .contactDetails #rightSction form textarea {
+    margin: 0.3rem 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border-color: transparent;
+    background-color: rgb(22, 21, 21);
+    color: white;
+}
+
+.mainContentSection .contactSection .contactDetails #rightSction form button {
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    background-color: rgb(22, 21, 21);
+    border: transparent;
+    transition: 0.2s ease-in-out all;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.mainContentSection .contactSection .contactDetails #rightSction form button i {
+    margin-left: 1rem;
+}
+
+.mainContentSection .contactSection .contactDetails #rightSction form button:hover {
+    cursor: pointer;
+    background-color: blue;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .socialMedia {
+    display: flex;
+    margin: 1rem;
+}
+
+.footer .socialMedia i {
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(22, 21, 21);
+    border-radius: 0.3rem;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 0.7em;
+    }
+
+    .navbar {
+        padding: 0.3rem 0.5rem;
+    }
+
+    .navbar #nav-right a {
+        margin: 0 0.5rem;
+    }
+
+    .header_container {
+        width: 100%;
+        padding: 0 1rem;
+        height: 40vh;
+    }
+
+    .header_container img {
+        display: none;
+    }
+
+    .header_container #subContainer_left {
+        width: 100%;
+    }
+
+    .header_container #subContainer_left h1,
+    .header_container #subContainer_left h3 {
+        font-size: 1.2em;
+    }
+
+    .header_container #subContainer_left p {
+        width: 120%;
+    }
+
+    .header_container .socialIcons {
+        width: 100%;
+    }
+
+    .mainContentSection {
+        padding: 0;
+    }
+
+    .mainContentSection .projectSection {
+        padding: 0;
+    }
+
+    .mainContentSection .projectSection .projectContainer {
+        width: 100%;
+    }
+
+    .mainContentSection .projectSection .projectContainer .projectsCard {
+        width: 42%;
+        margin: 1rem;
+    }
+
+    .mainContentSection .projectSection .projectContainer .projectsCard img {
+        height: 150px;
+    }
+
+    .mainContentSection .projectSection .projectContainer .projectsCard .btns {
+        display: flex;
+    }
+
+    .mainContentSection .projectSection .projectContainer .projectsCard .btns button {
+        font-size: 0.1em;
+        padding: 0;
+    }
+
+    .mainContentSection .contactSection {
+        width: 100%;
+        padding: 0;
+    }
+
+    .mainContentSection .contactSection .contactDetails {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainContentSection .contactSection .contactDetails #leftSction {
+        display: none;
+    }
+
+    .mainContentSection .contactSection .contactDetails #rightSction {
+        width: 100%;
+        margin-left: 0;
+    }
+}

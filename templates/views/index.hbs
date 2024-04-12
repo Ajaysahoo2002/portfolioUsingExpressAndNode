@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <!-- Link for bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- Heading Section -->
+    <header>
+        <!-- Navigation Section -->
+        {{>navbar}}
+        <!-- Header Container -->
+        <div class="header_container" id="header_container">
+            <!-- Left Header Sub Container -->
+            <div id="subContainer_left">
+                <h3>MERN Developer</h3>
+                <h1>Hi, I'm <span id="name"></span></h1>
+                <p>I'm a MERN developer experience in both Frontend and Backend technologies. I've got hands-on skills
+                    in web developing using the MERN stack, which includes MongoDB, Express js, React js and Node js.
+                </p>
+                <a id="cv-link"><button>Download my CV</button></a>
+                <div class="socialIcons">
+                    <a id="linkedIn_link" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a id="gitHub_link" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            <!-- Right Header Sub Container -->
+            <div id="subContainer_right">
+                <div class="rightImg">
+                    <img src="/assets/ajay.jpg" alt="Ajay Sahoo Profile" />
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="mainContentSection">
+        <div class="aboutSection">
+            <h6>Know me</h6>
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ea, ipsum, eos consectetur, excepturi ad
+                incidunt aspernatur sunt beatae porro temporibus animi neque recusandae tenetur dicta quas voluptas quia
+                nemo asperiores laboriosam praesentium impedit quidem eveniet. Temporibus quos adipisci nulla!
+                Voluptates ratione asperiores rerum doloribus magnam maiores praesentium nostrum? Eaque soluta pariatur
+                necessitatibus cumque optio dolor odit veniam cum, beatae dicta, consectetur asperiores illo, ab aut
+                minus odio! Libero fugiat impedit natus ut quasi! Quia beatae deserunt nam perferendis exercitationem
+                rerum, voluptate quibusdam excepturi recusandae cum quos nihil praesentium eius tempore explicabo
+                aliquam animi sunt repudiandae doloremque molestias! Tempora, magnam.</p>
+            <a href="#"><button>Explore More <span><i class="bi bi-arrow-right"></i></span></button></a>
+        </div>
+        <!-- Project Section -->
+        {{>project}}
+        <!-- Contact Section -->
+        {{>contact}}
+    </div>
+    <hr>
+    <!-- Footer Section -->
+    {{>footer}}
+</body>
+
+</html>
